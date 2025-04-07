@@ -5,6 +5,9 @@ public class Player {
     public Player(String playerSymbol){
         this.playerSymbol=playerSymbol;
     }
+    public Player flip(){
+       return new Player(playerSymbol.equals("X")?"O":"X");
+    }
     public String symbol(){
         return playerSymbol;
     }
