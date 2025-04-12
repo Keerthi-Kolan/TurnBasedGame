@@ -32,7 +32,9 @@ public class TicTacToeBoard implements Board {
         }
         return string.toString();
     }
-
+    public String getSymbol(int row, int col) {
+        return cells[row][col];
+    }
     @Override
     public Board move(Move move) {
         setCell(move.getCell(),move.getPlayer().symbol());
